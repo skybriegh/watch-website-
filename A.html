@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    <title>About Us</title>
+    <style>
+
+        *{
+    margin:1px;  
+    padding: 2px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+
+}
+
+    
+.team-section{
+    width:85%;
+    padding:20px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.team-member{
+    width: 275px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 7.5px;
+    text-align: centre;
+    cursor: pointer;
+    margin-top: 128px;
+
+}
+.team-member img{
+    border-radius: 80%;
+   
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+.team-member h3{
+    font-size: 28px;
+    color: #d22d22;
+    margin-bottom: 10px;
+}
+.team-member.title{
+    font-size: 25px;
+    color: #888;
+    margin-bottom: 10px;
+
+}
+.team-member.content{
+    font-size: 25px;
+    color: #555;
+    line-height: 2px;
+
+}
+.img-container{
+    display: flex;
+    height: 500px;
+    margin-bottom: 16px;
+}
+.main-img{
+    height: 720px;
+    background-size: cover;
+    width: 3000px;
+}
+.about-section{
+    text-align: center;
+}
+.about-section h2{
+    color: green;
+}
+.team-member .link-for a{
+    text-decoration: none;
+    color: rgb(47, 172, 255);
+}
+.team-member .link-for a:hover{
+    background-color: #888;
+}
+   
+    /*For From Validation*/
+    
+    * {
+            margin: 1px;
+            padding: 2px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .reviews {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+ /* For Navbar style */
+ nav{
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        
+    }
+    
+    .navlinks{
+        display: flex;
+    }
+    
+    .logo{
+        font-size: 52.8px;
+        color: var(--dark-grey);
+       
+    }
+    .navlinks li{
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        margin-left: 40px;
+        color: var(--light-black);
+        font-size: 16px;
+        letter-spacing: 4.8px;
+        position: relative;
+        }
+        .navlinks li a::after{
+        content: "";
+        background: rgb(134, 130, 130);
+        position: absolute;
+        height: .15rem;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform .5 ease; 
+     }
+    .navlinks li a:hover::after, .navlinks li .active::after{
+        transform: scaleX(1);
+    }
+
+      
+        footer{
+            background-color: #333;
+            color:#fff;
+            text-align:center;
+            padding: 10px;
+            margin-top:40px;
+        }
+        .title{
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <body>
+        <section class="section-one section">
+            <nav>
+                <div class="logo">Everest</div>
+                <ul class="navlinks">
+                    <li>
+                       <a href="index.html">Home</a>
+                   </li>
+                   <li>
+                    <a href="product2.html">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="active">About Us</a>
+                </li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                </ul>
+                
+            </nav>
+</header>
+
+<div class="about-section">
+    <h2> About Us</h2>
+</div>
+
+     <div class="img-container">
+    <div class="main-img" style="background-image: url('abhinavimg/Desktop.jpg.webp');">
+    </div>
+</div>
+
+    <section class="team-section">
+       
+        <div class="team-container">
+            <div class="team-member">
+                <img src="abhinavimg/Abhinav.jpg">
+                <h3>Abhinav Shrestha</h3>
+                <p class="Title"><strong>Software Developer</strong></p>
+                <p class="content">Delivered 10+ projects,focousing on healthcare and e-commerce domains.</p>
+                <p class="link-for"><a href="abhinav.html">view more</a></p>
+                
+                
+                
+            </div>
+        
+            <div class="team-member">
+                <img src="abhinavimg/Pranjal.jpg">
+                <h3>Pranjal Raj Rokka</h3>
+                <p class="Title"><strong>IT Project Manager</strong></p>
+                <p class="content">Improved project delivery timelines by 20% through optimized workflows.</p>
+                <p class="link-for"><a href="Pranjal.html">view more</a></p>
+                    
+
+                
+            </div>
+                <div class="team-member">
+                    <img src="abhinavimg/Suraj.jpeg">
+                    <h3>Suraj Tiwari</h3>
+                    <p class="Title"><strong>UI/UX Designer</strong></p>
+                    <p class="content">Strong skills in Adobe XD, Figma,and Sketch.</p>
+                    <p class="link-for"><a href="Suraj.html">view more</a></p>
+                    
+                </div>
+                    <div class="team-member">
+                        <img src="abhinavimg/bobby.jpg">
+                        <h3>Bobby Kunwar</h3>
+                        <p class="Title"><strong>Quality Assurance Engineer</strong></p>
+                        <p class="content">Bobby’s experience and insights are integral to our team’s success.</p>
+                        <p class="link-for"><a href="Bobby.html">view more</a></p>
+                       
+                    </div>
+                    </div>
+    </section>
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="reviews">
+        <h2>Leave a Review</h2>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="review">Your Comments</label>
+                <textarea id="review" name="review" rows="4"></textarea>
+                <span class="error" id="reviewError"></span>
+            </div>
+            <button type="submit">Submit Review</button>
+        </form>
+        <h3>Reviews:</h3>
+        <ul id="reviewList"></ul>
+    </div>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            let isValid = true;
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            
+            document.getElementById("nameError").textContent = "";
+            document.getElementById("emailError").textContent = "";
+            
+            if (name.trim() === "") {
+                document.getElementById("nameError").textContent = "Name is required";
+                isValid = false;
+            }
+            
+            if (email.trim() === "" || !email.includes("@")) {
+                document.getElementById("emailError").textContent = "Valid email is required";
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+
+        document.getElementById("reviewForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let review = document.getElementById("review").value;
+            let reviewError = document.getElementById("reviewError");
+            reviewError.textContent = "";
+            
+            if (review.trim() === "") {
+                reviewError.textContent = "Review cannot be empty";
+                return;
+            }
+            
+            let reviewList = document.getElementById("reviewList");
+            let newReview = document.createElement("li");
+            newReview.textContent = review;
+            reviewList.appendChild(newReview);
+            
+            document.getElementById("review").value = "";
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+    <footer>                    
+        <p>&copy; 2002Everest watches . All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>     

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest Watches</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            color: #333;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(28, 97, 158);
+            color: aqua;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #abc9ad;
+        }
+        .watch-calculator {
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            max-width: 400px;
+            background-color: #f9f9f9;
+        }
+        .watch-calculator input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .watch-calculator button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(28, 97, 158);
+            color: white;
+            cursor: pointer;
+        }
+        .watch-calculator button:hover {
+            background-color: #45a049;
+        }
+        #watch-meter {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-one section">
+        <nav>
+            <div class="logo">Everest</div>
+            <ul class="navlinks">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="product2.html">Products</a></li>
+                <li><a href="A.html">About Us</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="image-container">
+                <img src="images/omega blue.png" class="header-image">
+            </div>
+            <div class="content">
+                <h1 class="header-heading">Pure Luxury</h1>
+                <h2 class="product-name">Blue Samel</h2>
+                <p class="header-pricing">$5000</p>
+                <div class="btn-container">
+                   <a href="product2.html"><button class="primary-btn">Discover</button> </a>
+                    <button class="secondary-btn" onclick="showSomething()">Add to cart</button>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <section class="section-two section" id="product">
+        <div class="section-two-container">
+            <div class="section-two-inner-container">
+                <div class="content">
+                    <h1 class="section-two-heading">Quartz Casino</h1>
+                    <p class="section-two-para">Complicated watchmaking is the supreme test of designers' expertise and watchmakers' skills. Quartz Casino is the ultimate example of this statement.</p>
+                    <p class="section-two-price">$900,00</p>
+                    <a href="research.html"><button class="section-two-btn">Research Now</button></a>
+                </div>
+                <div class="image-container">
+                    <img src="images/product watch.png" class="section-two-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-three section" id="About us">
+        <h1 class="section-heading">Best Sellers</h1> 
+        <div class="card-container">
+            <div class="card">
+                <img src="images/Tissot.png" class="card-image">
+                <h2>Tissot</h2>
+                <p class="card-pricing">$2999.99</p>
+                <a href="blog.html"><button class="secondary-btn">Discover</button></a>
+            </div>
+            <div class="card">
+                <img src="images/Klassc.png" class="card-image">
+                <h2>Klasik</h2>
+                <p class="card-pricing">$2999.99</p>
+                <a href="blog.html"><button class="secondary-btn">Discover</button></a>
+            </div>
+            <div class="card">
+                <img src="images/citizen.png" class="card-image">
+                <h2>Citizen</h2>
+                <p class="card-pricing">$2999.99</p>
+                <a href="blog.html"><button class="secondary-btn">Discover</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="watch-calculator">
+        <h2>Find Out How Much a Watch Suits You!</h2>
+        <input type="text" id="watch-name" placeholder="Enter watch name">
+        <button onclick="calculateWatch()">Calculate</button>
+        <p id="watch-meter"></p>
+    </section>
+
+    <section class="section-four section">
+        <div class="section-four-container">
+            <div class="content">
+                <h1 class="section-four-Gentle">For The Gentlemen out there</h1>
+                <a href="A.html"><button class="section-four-btn">About Us</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-five section">
+        <h1 class="section-heading">Collection</h1>
+        <div class="grid-card-container">
+            <div class="grid-card" Collection="Rado"></div>
+            <div class="grid-card" Collection="Geneve"></div>
+            <div class="grid-card" Collection="Tissot"></div>
+            <div class="grid-card" Collection="Carter"></div>
+            <div class="grid-card" Collection="Omega"></div>
+            <div class="grid-card" Collection="Fitron"></div>
+        </div>
+    </section>
+
+    <script> 
+        function calculateWatch() {
+            var watchName = document.getElementById("watch-name").value.trim();
+            if (watchName === "") {
+                document.getElementById("watch-meter").innerText = "Please enter a watch name!";
+                return;
+            }
+            var watchLevel = Math.floor(Math.random() * 101);
+            var message = watchName + " suits you " + watchLevel + "%!";
+            document.getElementById("watch-meter").innerText = message;
+        }
+        
+        function showSomething() {
+            alert("Product Successfully Added to Cart");
+        }
+    </script>
+    
+    <footer> 
+        <p>&copy; 2025 Islington College. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

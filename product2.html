@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="product2.css">
+  
+    <!--internal css-->
+    <style>
+     body{
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        flex-direction: column;
+        display: flex;
+     }
+     
+     
+     nav{
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;       
+    }
+
+    .navlinks{
+        display: flex;
+    }
+    .logo{
+        font-size: 52.8px;
+        color: var(--dark-grey);
+        
+    }
+    .navlinks li{
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        margin-left: 40px;
+        color: var(--light-black);
+        font-size: 16px;
+        letter-spacing: 4.8px;
+        position: relative;  
+      }
+      .navlinks li a:hover{
+        border: 1px solid white;
+
+      }
+      .navlinks li a::after{
+        content: "";
+        background: rgb(134, 130, 130);
+        position: absolute;
+        height: .15rem;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform .5 ease; 
+     }
+    .navlinks li a:hover::after, .navlinks li .active::after{
+        transform: scaleX(1);
+    }
+
+      .navlinks .cart-icon{
+        margin-left: 64px;
+        cursor: pointer;
+      }
+     
+     /* this is footer section*/
+     footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+
+     }
+    </style>
+</head>
+
+
+<body>
+    <!--header section include navigation-->
+<header>
+    <nav>
+        <div class="logo">Everest</div>
+            <ul class="navlinks">
+                <li>
+                   <a href="index.html">Home</a>
+               </li>
+
+               <li>
+                <a href="" class="active">Products</a>
+            </li>
+            <li>
+                <a href="A.html">About Us</a>
+            </li>
+            <li>
+                <a href="research.html">Research</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+
+            <li class="cart-icon"> <a href="cart.html"> 🛒 <span id="cart-all">0</span> </a> </li>
+            </ul>
+    </nav>
+</header>
+    
+    <section class="top-part">
+    <div class="main-section">
+
+        <div class="main-text">
+        <h1>Found your best watches here</h1>
+        <p>Explore high quality products with exclusive discount</p>
+        <a href="#allproducts" class="shop-btn"> shop now</a> 
+    </div>
+    
+     <div class="main-image">
+        <img src="projectimage/clockback.webp" alt="mainimage">
+        <img src="projectimage/found.webp" alt="main2ndimage">
+     </div>
+
+    </div>
+    </section>
+       
+
+<!-- this is product section of all different product --> 
+      <section id="allproducts">
+    <div class="product-sec">
+
+
+        <div class="product-item">
+            <img src="projectimage/w1.jpg" alt="watch1">
+            <h2> Mohrar-7th Edi</h2>
+            <p class="definition"> A premeium chronograph watch with a sleek stainless steel body,precision movement and water resistance up to 100m.</p>
+            <p class="money"> $86</p>
+            <button class="my-cart" onclick="alertmsg('watch1',86,'projectimage/w1.jpg')">Add to cart</button>
+        </div>
+
+
+        <div class="product-item">
+            <img src="projectimage/w2.jpg" alt="watch2">
+            <h2> Geneva swiss</h2>
+            <p class="definition"> Timeless design meeets modern craftsmanship with a genuine leather strap and minimalist dial for a sophisticated look.</p>
+            <p class="money"> $199</p>
+            <button class="my-cart" onclick="alertmsg('watch2',199,'projectimage/w2.jpg')">Add to cart</button>
+        </div>
+
+
+        <div class="product-item">
+            <img src="projectimage/w3.jpg" alt="watch3">
+            <h2> Recti feotina c1</h2>
+            <p class="definition"> stay connected with fitness tracking, heart rate monitoring, and app notifications on a high-resolution touchscreen display</p>
+            <p class="money"><span class="orgi-money">$999</span> $699</p>
+            <button class="my-cart" onclick="alertmsg('watch3',699,'projectimage/w3.jpg')">Add to cart</button>
+        </div>
+
+
+        <div class="product-item">
+            <img src="projectimage/w4.jpg" alt="watch4">
+            <h2> cartiersantos 2.O</h2>
+            <p class="definition"> Built for adventure with a durable titanium case, luminous hands, and a 300-meter water ressistance rating</p>
+            <p class="money"><span class="orgi-money">$1099</span> $712</p>
+            <button class="my-cart" onclick="alertmsg('watch4',712,'projectimage/w4.jpg')">Add to cart</button>
+        </div>
+
+
+        <div class="product-item">
+            <img src="projectimage/w10.jpg" alt="watch5">
+            <h2> Rider NTOR v4.0</h2>
+            <p class="definition"> inspired by classic aviation, featuring a large dial, tachymeter bezel, and durable sapphire crystal glass.</p>
+            <p class="money"><span class="orgi-money">$395</span>$186</p>
+            <button class="my-cart" onclick="alertmsg('watch5',186,'projectimage/w10.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/w11.webp" alt="watch6">
+            <h2> SURCS FOSSIL 9MM</h2>
+            <p class="definition"> A sleek and lightweight watch with a thin case, clean dial, and a comfortable mesh band for everyday wear.</p>
+            <p class="money"><span class="orgi-money">$986</span>$612</p>
+            <button class="my-cart" onclick="alertmsg('watch6',612,'projectimage/w11.webp')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/w12.webp" alt="watch7">
+            <h2> SURCS FOSSIL</h2>
+            <p class="definition"> elevate your style with a 24k gold-plated case, diamond-studded bezel, and swiss quartz movement.</p>
+            <p class="money">$399</p>
+            <button class="my-cart" onclick="alertmsg('watch7',399,'projectimage/w12.webp')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/w13.jpg" alt="watch8">
+            <h2> QMAX 1944 edi</h2>
+            <p class="definition"> the perfect blend of tradition and technology, combining an analog display with hidden smart features like step tracking and notifications.</p>
+            <p class="money">$599</p>
+            <button class="my-cart" onclick="alertmsg('watch8',599,'projectimage/w13.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/w14.jpg" alt="watch9">
+            <h2> Rolex GMT-master 500mm</h2>
+            <p class="definition"> designed for extreme conditions with shock resistance, a built-in compass, and solar-powered battery life.</p>
+            <p class="money">$2099</p>
+            <button class="my-cart" onclick="alertmsg('watch9',2099,'projectimage/w14.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/15.jpg" alt="watch10">
+            <h2> KlasiK</h2>
+            <p class="definition"> a meismerizing open-heart dial revealing the intricate mechanical movement beneath a sapphire crystal glass.</p>
+            <p class="money">$399</p>
+            <button class="my-cart" onclick="alertmsg('watch10',399,'projectimage/15.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/16.jpg" alt="watch11">
+            <h2> Citzt</h2>
+            <p class="definition"> built for performance with a durable rubber strap, stopwatch, multiple time zones, and LED backlight for night visibility.</p>
+            <p class="money"><span class="orgi-money">$456</span>$278</p>
+            <button class="my-cart" onclick="alertmsg('watch11',278,'projectimage/16.jpg')">Add to cart</button>
+        </div>
+
+
+        <div class="product-item">
+            <img src="projectimage/17.jpg" alt="watch12">
+            <h2> Tossil</h2>
+            <p class="definition"> A timeless masterpiece with an antique brass finish, roman numerals, and a precision wind-up mechanical movement.</p>
+            <p class="money"><span class="orgi-money">$666</span>$444</p>
+            <button class="my-cart" onclick="alertmsg('watch12',444,'projectimage/17.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/18.jpg" alt="watch13">
+            <h2> Quartz casino</h2>
+            <p class="definition"> A sophisticated timepiece with a stainless steel case, multi-function chronograph and water resistance up to 100m. perfect for formal and casual wear.</p>
+            <p class="money">$1274</p>
+            <button class="my-cart" onclick="alertmsg('watch13',1274,'projectimage/18.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/19.jpg" alt="watch14">
+            <h2> Omega grnt</h2>
+            <p class="definition"> built for explorers, this rugged watch features a lightweight titanium case, luminous hands, and a scratch-resistant sapphire crystal for durability 
+                in any condition.
+            </p>
+            <p class="money">$894</p>
+            <button class="my-cart" onclick="alertmsg('watch14',894,'projectimage/19.jpg')">Add to cart</button>
+        </div>
+
+        <div class="product-item">
+            <img src="projectimage/20.jpg" alt="watch15">
+            <h2> surxs G-90</h2>
+            <p class="definition"> A modern watch with a high-resolution AMOLED display, fitness tracking, heartrate monitoring, and seamless smartphone connectivity.
+                ideal for an active lifestyle
+            </p>
+            <p class="money"><span class="orgi-money">$9999</span> $4866</p>
+            <button class="my-cart" onclick="alertmsg('watch15',4866,'projectimage/20.jpg')">Add to cart</button>
+        </div>
+        
+    </div>
+      </section>
+    <!-- footer section-->
+    <footer>
+      <p>&copy; 2002Everest watches . All Rights Reserved </p>
+    </footer>
+      
+    <!--inline js-->
+    <script src="product2.js">
+        
+    
+    </script>
+</body>
+</html>

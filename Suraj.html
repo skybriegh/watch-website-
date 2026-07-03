@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            
+            color:black;
+           
+            
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 40px;
+        }
+        .profile-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section {
+            margin: 0px;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .section h2 {
+            background: #2b2929;
+            color: #fff;
+            padding: 10px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 5px 5px 0 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+ /* For Navbar style */
+ nav{
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        
+    }
+    
+    .navlinks{
+        display: flex;
+    }
+    
+    .logo{
+        font-size: 52.8px;
+        color: var(--dark-grey);
+    }
+    .navlinks li{
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        margin-left: 40px;
+        color: var(--light-black);
+        font-size: 16px;
+        letter-spacing: 4.8px;
+        position: relative;
+        }
+        .navlinks li a::after{
+        content: "";
+        background: rgb(134, 130, 130);
+        position: absolute;
+        height: .15rem;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform .5 ease; 
+     }
+    .navlinks li a:hover::after, .navlinks li .active::after{
+        transform: scaleX(1);
+    }
+
+
+      
+        footer{
+            background-color: #333;
+            color:#fff;
+            text-align:center;
+            padding: 10px;
+            margin-top:40px;
+        }
+        .title{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <body>
+        <section class="section-one section">
+            <nav>
+                <div class="logo">Everest</div>
+                <ul class="navlinks">
+                    <li>
+                       <a href="index.html">Home</a>
+                   </li>
+                   <li>
+                    <a href="product2.html">Products</a>
+                </li>
+                <li>
+                    <a href="#" class="active">About Us</a>
+                </li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                </ul>
+                
+            </nav>
+
+            <header>
+                <h1>Suraj's Professional CV</h1>
+            </header>
+
+    <div class="container">
+        <img src="abhinavimg/Suraj.jpeg" alt="Profile Picture" class="profile-image">
+
+        <div class="section">
+            <h2>Personal Information</h2>
+            <ul>
+                <li><strong>Name:</strong> Suraj Tiwari</li>
+                <li><strong>Email:</strong> SurajTiwari123@gmail.com</li>
+                <li><strong>Phone:</strong> +123-456-7890</li>
+                <li><strong>LinkedIn:</strong> linkedin.com/in/Suraj</li>
+                <li><strong>Portfolio:</strong> www.Surajportfolio.com</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Career Objective</h2>
+            <p>"To create intuitive and visually engaging user interfaces that enhance user experience and engagement, using my creativity and technical skills to solve design challenges and deliver impactful solutions.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>UI/UX Tools: Figma, Adobe XD, Sketch</li>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                 <li><strong>UI/UX Designer</strong> at Creative Minds (2016-2018)</li>
+                <p>Designed intuitive interfaces to enhance user experience and engagement.</p>
+             </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor's in COMPUTER NETWORKING AND IT SECURITY</strong> - London Metropolitan University (2024-2027)</li>
+            
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2002Everest watches . All Rights Reserved</p>
+    </footer>
+</body>
+</html>

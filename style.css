@@ -1,0 +1,291 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .section{
+        min-height: 100vh;
+        width:100%;
+       
+    }
+    nav{
+        width: 80%;
+        height: 13vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        position: sticky;
+        
+    }
+    header{
+        width: 80%;
+        height: calc(100vh - 13vh);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .navlinks{
+        display: flex;
+    }
+    .header-image{
+        width: 540px;
+    }
+    .logo{
+        font-size: 52.8px;
+       
+    }
+    .navlinks li{
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        margin-left: 40px;
+        color: var(--light-black);
+        font-size: 16px;
+        letter-spacing: 4.8px;
+        position: relative;  
+      }
+    .header-heading{
+        font-size: 80px;
+      }
+    .product-name{
+        font: size 27.2px;
+      }
+    .header-pricing{
+        font-size: 24px;
+        margin: 16px 0;
+      }
+    .primary-btn, .secondary-btn{
+        font-size: 17.6px;
+        border: none;
+        padding: 16px 16px;
+        transition: transform .5s ease-in-out;
+     }
+    .btn-container{
+        display: flex;
+     }
+     .primary-btn{
+        background:lightgrey;
+     }
+    .secondary-btn{
+        background: lightseagreen;
+        color: var(--white);
+        transform: scale(1.1);
+     }
+    .primary-btn:hover, .section-two-btn:hover, .section-four-btn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+     }
+    .secondary-btn:hover{
+        transform: scale(1);
+     }
+    .navlinks li a::after{
+        content: "";
+        background: rgb(134, 130, 130);
+        position: absolute;
+        height: .15rem;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform .5 ease; 
+     }
+    .navlinks li a:hover::after, .navlinks li .active::after{
+        transform: scaleX(1);
+    }
+    
+   .section-two{
+    display: flex;
+    align-items: center;
+    }
+    .section-two-container{
+        background: peachpuff;
+        width:100%;
+        height: 50%;
+        transform: skewY(-7deg);
+    }
+    .section-two-image{
+        width: 448px;
+    }
+    .section-two-inner-container{
+        transform: skewY(7deg);
+        width: 80%;
+
+    }
+    .section-two-container, .section-two-inner-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two-heading{
+        color: rgb(53, 50, 50);
+        font-size: 64px;
+    }
+    .section-two-para{
+        font-size: 16px;
+        color: light black;
+        line-height: 19.2px;
+    }
+    .section-two-price{
+        font-size: 25.6px;
+        color: black;
+        margin: 14.4px 0;
+    }
+    .section-two-btn{
+        padding: 14.4px 27.2px;
+        border:  solid darkcyan;
+        font-size: 17.6px;
+        background:transparent;
+        transition:transforn .5s eases;
+    }
+
+    .section-heading{
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 19.2px;
+    }
+    .card-container{
+        background: peachpuff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 48px;
+    }
+    .card-image{
+        width: 100%;
+    }
+    .card{
+        background: rgb(172, 172, 172);
+        padding: 32px;
+    }
+    .card-pricing{
+        font-size: 19.2px;
+        margin-top: 3.2px;
+        margin-bottom: 19.2px;
+    }
+
+    .section-four{
+        display: flex;
+        align-items: center;
+    }
+    .section-four-container{
+        width: 100%;
+        height: 70vh;
+        background-image: url("images/car.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+.section-four-Gentle{
+    font-size: 64px;
+    color: rgb(19, 18, 18);
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.section-four-btn{
+    font-size: 19.8px;
+    padding: 18px 30.6px;
+    background: peachpuff;
+    border: none;
+    transition: transform .05s ease;
+}
+
+.grid-card-container{
+    width: 60%;
+    height: 80vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    gap: 19.2px;
+    grid-auto-rows: 240px;
+    }
+    
+    .grid-card{
+        background: var(--light-grey);
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .grid-card:nth-child(1){
+        grid-row: 1/4;
+        background-image: url("images/rado\ watch.jpg");
+    }
+    .grid-card:nth-child(2){
+        background-image: url("images/geneve\ watch.jpg");
+        }
+    .grid-card:nth-child(3){
+        grid-row: 1/3;
+        background-image: url("images/tissot\ watch.jpg");
+    }
+    .grid-card:nth-child(4){
+        grid-row: 3/4;
+        background-image: url("images/cartier\ watch.jpg");
+    }
+    .grid-card:nth-child(5){
+        background-image: url("images/omega\ watch.jpg");
+    }
+    .grid-card:nth-child(6){
+        background-image: url("images/fitron\ watch.jpg");
+    }
+    .grid-card::before{
+        content:"";
+        position: absolute;
+        background: rgba( 0, 0, 0, 0.544);
+        inset: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 1s ease-in-out;
+    }
+    .grid-card:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    .grid-card::after{
+        content: attr(collection);
+        position:absolute;
+        text-transform: uppercase;
+        background: peachpuff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 16px 27.2px;
+        font-size: 17.6px;        
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s ease-in-out;
+     }
+
+     footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .grid-card:hover::after{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    
+    
+    

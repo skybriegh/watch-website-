@@ -1,0 +1,80 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+   flex-wrap: wrap;
+   margin-top: 40px;
+}
+
+/* Blog Intro Section */
+.blog-intro {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.blog-intro h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: purple;
+}
+
+.blog-intro p {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.blog-post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 16px;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    margin: 16px;
+    color:  black;
+    font-weight: bold;
+}
+
+.blog-post p {
+    margin: 0 16px 16px;
+    color: black;
+}
+

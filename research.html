@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverestWatch-Research</title>
+    
+    <style>
+        /* INternal css is used */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        /* For Navbar style */
+        
+        
+    nav{
+        width: 80%;
+        height: 13vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        position: sticky;
+        
+    }
+    header{
+        width: 100%;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .navlinks{
+        display: flex;
+        
+    }
+    .logo{
+        font-size: 52.8px;
+        color: var(--dark-grey);
+    }
+    .navlinks li{
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        margin-left: 40px;
+        color: var(--light-black);
+        font-size: 16px;
+        letter-spacing: 4.8px;
+        position: relative;  
+      }
+    .header-heading{
+        font-size: 80px;
+      }
+
+        
+      .navlinks li a::after{
+        content: "";
+        background: rgb(134, 130, 130);
+        position: absolute;
+        height: .15rem;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform .5 ease; 
+     }
+    .navlinks li a:hover::after, .navlinks li .active::after{
+        transform: scaleX(1);
+    }
+
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px; 
+            margin-bottom: 30px;
+        }
+
+        .image-row img {
+            max-width: 90%;
+            height: auto;
+            object-fit: cover;
+            flex: 1 0 45%; 
+            /* Ensure images take up 45% of the width */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .text {
+            margin-top: 20px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+        footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+    }
+    </style>
+</head>
+<body>
+    <!--header of the website-->
+ <header>
+        <nav>
+            <div class="logo">Everest</div>
+            <ul class="navlinks">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="product2.html">Products</a></li>
+                <li><a href="A.html">About Us</a></li>
+                <li><a href="#"class="active">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+    </header>
+     <!--THis is the research section of every page-->
+    <div class="container">
+        <h1 style="color: black;">REFERENCE FOR HOME PAGE</h1>
+        <div class="image-row">
+            <img src="surajphoto/Screenshot (1).png" alt="Image 1">
+            <img src="surajphoto/g.png" alt="Image 2">
+        </div>
+        <a href="https://www.naviforce-watch.com/" class="button">Visit</a>
+        <div class="text">
+            <h5>For the home page:</h5>
+            <p>We have taken references from naviforce nepal.We have the similar home page as in naviforce.In our homepage we have use javascript in 
+                add to cart button.After clicking in add to cart button we will get popup message.We have designed similar interface as naviforce.The 
+                difference is they have two button shop now,view more but we have discover and Add to cart.
+             </p>
+        </div>
+    
+        <h1 style="color: black;">REFERENCE FOR PRODUCT PAGE</h1>
+        <div class="image-row">
+            <img src="surajphoto/refnike.png" alt="Image 1">
+            <img src="surajphoto/product.png" alt="Image 2">
+        </div>
+        <a href="https://www.nike.com/" class="button">Visit</a>
+        <div class="text">
+            <h5>For the product page:</h5>
+            <p> We have taken reference from nike for the product page. The product page of nike is simple and clean.
+             The layout is simply designed,making easier to use by visitors or customers.The similarity is they have also
+             used shop button and we also have shop button.
+        </div>
+    
+        <h1 style="color: black;">REFERENCE FOR ABOUT US PAGE</h1>
+        <div class="image-row">
+            <img src="surajphoto/REFaboutus.png" alt="Image 1">
+            <img src="surajphoto/aboutus.png" alt="Image 2">
+        </div>
+        <a href="https://world.casio.com/corporate/brothers/" class="button">Visit</a>
+        <div class="text">
+            <h5>For the about us page:</h5>
+            <p>We have taken references from casio watch company beacause casio was establibshed by four Kashio brothers
+                Kashio Tadao,Kashio Toshio,Kashio kazuo and Kashio Yukio.The similar between casio and our website is we 
+                are also four members or partners.We have view more button to see introduction part of every members.
+            </p>
+        </div>
+    
+        <h1 style="color: black;">REFERENCE FOR BLOG PAGE</h1>
+        <div class="image-row">
+            <img src="surajphoto/Refblog.png" alt="Image 1">
+            <img src="surajphoto/blog.png" alt="Image 2">
+        </div>
+        <a href="https://regencywatch.com.np/press-releases" class="button">Visit</a>
+        <div class="text">
+            <h5>For the Blog Page:</h5>
+            <p>We have taken references from regency watch for the blog page.Not totally but our interface is similar to
+                regency watch nepal.
+                
+            </p>
+        </div>
+    
+        <h1 style="color: black;">REFERENCE FOR HOVER DESIGN</h1>
+        <div class="image-row">
+            <img src="surajphoto/e.png" alt="Image 1">
+            <img src="surajphoto/hover.png" alt="Image 2">
+        </div>
+        <a href="https://www.rolex.com/watches" class="button">Visit</a>
+        <div class="text">
+            <h5>For the hover effect:</h5>
+            <p>We choose rolex company to take references.Rolex was founded by Hans Wilsdrof and Alfred Davis in 1905.The hover design or effect they use in their website is
+               so smooth and simple in looking.We have taken references from different website for hover design but mainly we choosed
+               Rolex company website for the hover design.We have put hover design in the nav bar as well as in the other section also.
+                 </p>
+        </div>
+    </div>
+    <!--footer of the website-->
+    <footer> 
+        <p>&copy; 2025 Everest Watches. All Rights Reserved.</p>
+    </footer>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest trends and insights in the watch industry.">
+    <title>Watch showroom</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     /* header navigation link*/
+     nav{
+        width: 80%;
+        height: 13vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;       
+    }
+
+    .navlinks{
+        display: flex;
+    }
+    .logo{
+        font-size: 52.8px;
+        color: var(--dark-grey);
+        
+    }
+    .navlinks li{
+        list-style: none;
+    }
+    .navlinks li a{
+        text-decoration: none;
+        margin-left: 40px;
+        color: var(--light-black);
+        font-size: 16px;
+        letter-spacing: 4.8px;
+        position: relative;  
+      }
+      .navlinks li a:hover{
+        border: 1px solid white;
+
+      }
+      .navlinks li a::after{
+        content: "";
+        background: rgb(134, 130, 130);
+        position: absolute;
+        height: .15rem;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transition: transform .5 ease; 
+     }
+    .navlinks li a:hover::after, .navlinks li .active::after{
+        transform: scaleX(1);
+    }
+
+      
+      footer{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Everest</div>
+                <ul class="navlinks">
+                    <li>
+                       <a href="index.html">Home</a>
+                   </li>
+    
+                   <li>
+                    <a href="product2.html">Products</a>
+                </li>
+                <li>
+                    <a href="A.html">About Us</a>
+                </li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+                <li>
+                    <a href="#" class="active">Blog</a>
+                </li>
+    
+                
+                </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="blog-intro">
+            <h2>Welcome to the Watch Blog</h2>
+            <p>Discover how technology shapes the watch industry and explore consumer trends, timeless designs, and the future of timepieces.</p>
+        </section>
+
+        <section class="blog-posts">
+            <article class="blog-post">
+                <img src="blogimage/img4" alt="Smartwatch on display">
+                <h3>Aurora Classic – Elegant Dress Watch</h3>
+                <p>Smartwatches have revolutionized the way we perceive timekeeping, offering fitness tracking, notifications, and much more. Learn how these devices are becoming indispensable tools in daily life.</p>
+                
+            </article>
+
+            <article class="blog-post">
+                <img src="blogimage/img5" alt="Luxury watch close-up">
+                <h3>Luxury Watches in a Digital Era</h3>
+                <p>As digital timepieces dominate, luxury watches continue to hold their ground as symbols of status and craftsmanship. Explore why tradition still matters in the watch industry.</p>
+                
+            </article>
+
+            <article class="blog-post">
+                <img src="blogimage/img3.jpeg" alt="Vintage watch with leather strap">
+                <h3>Vintage Watches: Timeless Appeal</h3>
+                <p>Vintage watches captivate collectors and enthusiasts alike. Discover why these timeless pieces remain sought after and how they preserve history.</p>
+                
+            </article>
+
+            <article class="blog-post">
+                <img src="blogimage/img6" alt="Vintage watch with leather strap">
+                <h3>RolexGMTMaster X1 – Luxury Rolex Watch</h3>
+                <p>Experience precision and elegance with the ChronoMaster X1, 
+                    a luxury chronograph designed for those who appreciate fine craftsmanship.
+                     Featuring a sapphire crystal display, a stainless steel case, and a high-accuracy quartz movement, 
+                    this watch is perfect for both formal and casual occasions</p>
+                
+            </article>
+
+            <article class="blog-post">
+                <img src="blogimage/img7" alt="Vintage watch with leather strap">
+                <h3>Eclipse Nightfall – Minimalist Black Watch</h3>
+                <p> For those who love modern simplicity, the Eclipse Nightfall offers a 
+                    sleek, matte-black 
+                    stainless steel case with a matching black dial and strap</p>
+                
+            </article>
+
+            <article class="blog-post">
+                <img src="blogimage/img9" alt="Vintage watch with leather strap">
+                <h3> VentureX Explorer – Rugged Outdoor Sports Watch</h3>
+                <p>Built for adventure, the VentureX Explorer is a rugged watch 
+                    designed to withstand extreme conditions. It features a shock-resistant case, a
+                     silicone strap for comfort, and 200-meter water 
+                    resistance for diving and outdoor activities</p>
+                
+            </article>
+
+
+        </section>
+    </main>
+
+    <footer>
+       
+        <p>&copy; 2002Everest watches . All Rights Reserved </p>
+       
+    </footer>
+</body>
+</html>

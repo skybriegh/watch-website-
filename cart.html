@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Cart Page internal css */
+#cart-items {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    color: gold;
+
+}
+
+header button a{
+    text-decoration: none;
+    color: black;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Add to Cart Popup */
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+.connect-to{
+    max-width: 800px;
+  margin: 40px auto 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.connect-to h1{
+    margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+.links{
+    display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.links a img{
+    width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.links a img:hover{
+    transform: scale(1.1);
+}
+    </style>
+</head>
+
+
+
+<body>
+    
+    <!--cart page header section-->
+    <header>
+        <h1>Your Shopping Cart</h1>
+       <button><a href="product2.html">← Continue Shopping</a></button>
+    </header>
+     
+    <!--cart section-->
+    <section id="cart-items">
+        <h2>Cart Items</h2>
+        <div class="cart-container"></div>
+        <p id="cart-total">Total: $0</p>
+        <button id="clear-cart">Clear Cart</button>
+    </section>
+      
+    <!--social connection section-->
+    <section class="connect-to">
+       <h1> For more inquiry feel free to reach us through </h1>
+       <div class="links">
+       <a href="https://www.facebook.com/"> <img src="projectimage/facebook.png" alt=""> </a>
+       <a href="https://www.instagram.com/"> <img src="projectimage/insta.jpeg" alt=""> </a>
+       <a href="https://www.whatsapp.com/"><img src="projectimage/whatsapp.jpeg" alt="">  </a>
+       <a href="https://www.yahoo.com/"><img src="projectimage/yahoo.png" alt=""></a>
+       </div>
+    </section>
+
+     <!--cart js -->
+    <script src="cart2.js">
+
+    </script>
+</body>
+</html>
